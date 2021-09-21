@@ -80,3 +80,34 @@ body {
 .aboutMe-text h2 {
     color:lightseagreen;
 }
+
+/* styles for resume page */
+.resume-body {
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.resume-title {
+    text-align: center;
+    color:lightseagreen;
+}
+
+.resume-headings {
+    color:lightseagreen;
+}
+
+.resume-headings3 {
+    color:lightseagreen;
+    padding-left: 50px;
+}
+
+.res-ed-text {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.res-aff-text {
+    padding-left: 75px;
+    padding-right: 75px;
+}
