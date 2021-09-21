@@ -73,6 +73,8 @@ body {
 
 .aboutMe-text {
     padding-right: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
 }
 
 .aboutMe-text h2 {
