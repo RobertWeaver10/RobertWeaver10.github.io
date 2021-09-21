@@ -9,7 +9,7 @@
         <div class="container">
             <div class="nav-bar">
                 <div class="left-side">
-                    <div class="nav-links">
+                    <div class="active-nav-link">
                         <a href="index.html">Home</a>
                     </div>
 
@@ -22,48 +22,24 @@
                 </div>
             </div>
 
-            <div class="content">
-                <div class="page-items">
-                    <div class="page-item-wrapper">
-                        <div class="page-img-background" style="background-image: url(images/headshot2.jpg)"></div>
+            <div class="aboutMe">
+                <div class="aboutMe-img">
+                    <img src="images/headshot2.jpg">
+                </div>
 
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/about_me_logo.png" alt="">
-                            </div>
-                        </div>
+                <div class="aboutMe-text">
+                    <h2>About Me</h2>
 
-                        <div class="subtitle">about me</div>
-                    </div>
-
-                    <div class="page-item-wrapper">
-                        <div class="page-img-background" style="background-image: url(images/resume_img_1.jpg)"></div>
-
-                        <div class="img-text-wrapper">
-                            <div class="logo-wrapper">
-                                <img src="images/logos/resume_logo.png" alt="">
-                            </div>
-                        </div>
-
-                        <div class="subtitle">my work resume</div>
-                    </div>
+                    <p>
+                        This is the first website that I have made. I plan to make it into a nice looking portfolio.
+                        Currently I am a student at the University of Puget Sound located in Tacoma, Washington.
+                        I am going into my senior year as a computer science major with a business minor. Currently
+                        I am working at the Metropolitan Market on Mercer Island while working on some personal projects
+                        that I plan to connect to this website as I continue to work on mastering my coding.
+                    </p>
                 </div>
             </div>
         </div>
   </body>
-
-  <script>
-    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
-
-    portfolioItems.forEach(portfolioItem => {
-        portfolioItem.addEventListener('mouseover', () => {
-            portfolioItem.childNodes[1].classList.add('img-darken');
-          })
-
-          portfolioItem.addEventListener('mouseout', () => {
-            portfolioItem.childNodes[1].classList.remove('img-darken');
-          })
-      })
-</script>
 
 </html>
