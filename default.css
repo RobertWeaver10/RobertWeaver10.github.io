@@ -107,6 +107,26 @@ body {
     padding-right: 75px;
 }
 
+.res-exp-disclaimer {
+    font-size: 8pt;
+    color:gray;
+}
+
+.res-exp-text {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.res-course-list {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.res-tech-proj-text {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
 .res-aff-text {
     padding-left: 75px;
     padding-right: 75px;
