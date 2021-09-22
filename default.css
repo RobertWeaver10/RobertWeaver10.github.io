@@ -75,9 +75,12 @@ body {
     padding-right: 200px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
+    text-align: center;
 }
 
 .aboutMe-text h2 {
+    font-size: 28pt;
+    text-align: center;
     color:lightseagreen;
 }
 
