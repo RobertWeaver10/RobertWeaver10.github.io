@@ -15,6 +15,9 @@
           <div class="nav-links">
             <a href="resume.html">Resume</a>
           </div>
+          <div class = "nav-links">
+            <a href="aboutMe.html">About Me</a>
+          </div>
         </div>
 
         <div class="right-side">
@@ -24,42 +27,60 @@
         </div>
       </div>
 
-      <div class="aboutMe">
-        <div class="aboutMe-img">
-          <img src="images/headshot2.jpg" />
+      <div class = "projectShortcuts">
+        <div class="project-items-wrapper">
+          <div class="project-item-wrapper">
+            <div class="project-img-background" style="background-image: url(images/goldenGlizzy.png);">
+
+            </div>
+            <div class="img-text-wrapper">
+              <h3 class = "projDesc">Glizzy Royale</h3>
+            </div>
+          </div>
+
+          <div class="project-item-wrapper">
+            <div class="project-img-background" style="background-image: url(images/SimonGuessingGame.png);">
+
+            </div>
+            <div class="img-text-wrapper">
+              <div class="projDesc">Simon(e) Memory Game</div>
+            </div>
+          </div>
+
+          <div class="project-item-wrapper">
+            <div class="project-img-background" style="background-image: url(images/SchellingModel.png);">
+
+            </div>
+            <div class="img-text-wrapper">
+              <div class="projDesc">Schelling's Model of Self Segregation</div>
+            </div>
+          </div>
+
+          <div class="project-item-wrapper">
+            <div class="project-img-background" style="background-image: url(images/WordPlayGame.png);">
+
+            </div>
+            <div class="img-text-wrapper">
+              <div class="projDesc">Word Guessing Game</div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="aboutMe-text">
-          <h2>About Me</h2>
-
-          <p>
-            My name is Robert Weaver and I am currently in my senior year at the
-            University of Puget Sound.<br /><br />
-            I was born in Seattle back in 1999 and grew up on Mercer Island
-            after moving when I was around the age of 2. I attended the Mercer
-            Island public schools and graduated from Mercer Island High School
-            in 2018. In high school I participated in athletics, I played jv and
-            varsity baseball and basketball. In baseball I played all four of my
-            high school years, playing on the varsity team from my sophomore
-            through senior years, making the state playoffs all three years,
-            being named an all state pitcher two years in a row and being named
-            Player of the week from the Washington Interscholastic Athletics
-            Association. <br /><br />
-            After highschool I came the University of Puget Sound, where I
-            currently am today. I came to the school as a part of the varsity
-            baseball team and a exercise science major. The spring of my
-            freshman year I went through the rush process and accepted my bid
-            from Phi Delta Theta becoming an active member at the end of the
-            school year. My sophomore year I switched majors twice finally
-            settling on computer science and not looking back once since.
-            Additionally I ran for an exec position in the fraternity and won
-            becoming the chapter's brotherhood chair. My junior year I did not
-            do much of anything eventful, covid prevented me from doing much
-            besides attend my online classes. Now I am excited as I watch things
-            start to adapt and move back towards a better tomorrow.
-          </p>
-        </div>
       </div>
     </div>
   </body>
+
+  <script>
+    const projectItems = document.querySelectorAll('.project-item-wrapper');
+    
+    projectItems.forEach(projectItem => {
+      projectItem.addEventListener('mouseover', () => {
+        projectItem.childNodes[1].classList.add('img-darken');
+      })
+      projectItem.addEventListener('mouseout', () => {
+        projectItem.childNodes[1].classList.remove('img-darken');
+      })
+    })
+  </script>
 </html>
