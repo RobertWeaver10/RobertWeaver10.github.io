@@ -186,3 +186,21 @@ body {
     padding-left: 75px;
     padding-right: 75px;
 }
+
+/* Styles for js projects page */
+
+
+.jsProject {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.jsProjectText {
+    align-items: left;
+}
+
+.jsProjectIMG img{
+    height: 350px;
+    width: 100%;
+}
