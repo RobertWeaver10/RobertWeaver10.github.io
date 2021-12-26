@@ -1,0 +1,206 @@
+/* Master Styles using css grid*/
+body {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*styles for nav bar using flex box*/
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-bar > .left-side > div {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.nav-links {
+    height: 22px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-links a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-links:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-links a:hover {
+    color: black;
+}
+
+.right-side {
+    text-transform: uppercase;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    text-decoration: none;
+    color: black !important;
+}
+
+/* styles for index (home) page */
+
+.project-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-item-wrapper{
+    position: relative;
+}
+
+.project-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.img-text-wrapper .projDesc {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .projDesc {
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.project-about-links {
+    text-decoration: none;
+}
+/* styles for about me page */
+
+.aboutMe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.aboutMe-img img {
+    max-width: 100%;
+    height: 60%;
+    margin-left: 200px;
+    border: 10px solid lightseagreen;
+}
+
+.aboutMe-text {
+    padding-right: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    text-align: center;
+}
+
+.aboutMe-text h2 {
+    font-size: 28pt;
+    text-align: center;
+    color:lightseagreen;
+}
+
+/* styles for resume page */
+.resume-body {
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.resume-title {
+    text-align: center;
+    color:lightseagreen;
+}
+
+.resume-headings {
+    color:lightseagreen;
+}
+
+.resume-headings3 {
+    color:lightseagreen;
+    padding-left: 50px;
+}
+
+.res-ed-text {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.res-exp-disclaimer {
+    font-size: 8pt;
+    color:gray;
+}
+
+.res-exp-text {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.res-course-list {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.res-tech-proj-text {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.res-aff-text {
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+/* Styles for js projects page */
+
+
+.jsProject {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.jsProjectText {
+    align-items: left;
+}
+
+.jsProjectIMG img{
+    height: 350px;
+    width: 100%;
+}
