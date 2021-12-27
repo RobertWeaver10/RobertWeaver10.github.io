@@ -11,11 +11,16 @@
     </head>
     <body>
         <h1>Typing practice</h1>
+        <h3>Instructions:</h3>
         <p>
-            Refresh page to get new quote <br>
-            currently writing game function:
+            1) Click button to get quote<br>
+            2) After 5 seconds from clicking the button the user can begin typing<br>
+            3) Upon a typo, the game ends, user is alerted they made a typo, and page refreshes<br>
+            4) Upon successful completion, the game ends, user is alerted of their speed, and page refreshes<br>
+            5) To get a new random quote refresh page before clicking button again
         </p>
         <input id="testButton" type="button" value="Click for random quote">
+        <div class="countDownTimer">5</div>
         <div class="randomQuote"></div>
         <div class="textBox"></div>
         <script src="typingApp.js" async defer></script>

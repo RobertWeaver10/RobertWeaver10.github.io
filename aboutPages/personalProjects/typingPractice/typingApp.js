@@ -1,6 +1,7 @@
 let testButton = document.querySelector("#testButton");
 let quoteArea = document.querySelector(".randomQuote");
 let userInputDiv = document.querySelector(".textBox");
+let countDownTimer = document.querySelector(".countDownTimer");
 
 let quote = "";
 let quoteArr = [];
@@ -11,6 +12,7 @@ let wpm = 0;//the final wpm of the user
 
 testButton.addEventListener("click", async () => {
     getQuote();
+    startGameCountdown();
     setTimeout(()=>{
         displayGameQuote();
         setTotalWords();
@@ -89,4 +91,20 @@ function calculateWpm () {
     finishTime = Date.now();
     let totalTimeMin = ((finishTime - startTime)/1000)/60;
     wpm = totalWords / totalTimeMin;
+}
+
+/**
+ * function that displays the count down to start the game when user clicks button
+ */
+function startGameCountdown() {
+    for (let i = 5; i > 0; i--){
+        setTimeout(()=>{
+            if (5-i != 0){
+                countDownTimer.innerHTML = 5 - i;
+            }
+            else{
+                countDownTimer.innerHTML = "Start";
+            }
+        },1000 * i);
+    }
 }
