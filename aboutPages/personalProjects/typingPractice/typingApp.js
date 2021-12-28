@@ -1,5 +1,5 @@
 let testButton = document.querySelector("#testButton");
-let quoteArea = document.querySelector(".randomQuote");
+let quoteTable = document.querySelector(".quoteTable");
 let userInputDiv = document.querySelector(".textBox");
 let countDownTimer = document.querySelector(".countDownTimer");
 
@@ -14,7 +14,7 @@ testButton.addEventListener("click", async () => {
     getQuote();
     startGameCountdown();
     setTimeout(()=>{
-        displayGameQuote();
+        displayQuoteTable();
         setTotalWords();
     }, 1000);
     setTimeout(()=>{
@@ -36,16 +36,37 @@ async function getQuote(){
 }
 
 /**
- * Sets the html to display the quote and splits the quote into an array of characters
+ * Sets the html to display the quote and splits the quote into an array of characters.
+ * this function displays the quote as just the quote. This makes the game more difficult
+ * as the user cannot track their position in the quote as easily.
  */
 function displayGameQuote(){
-    quoteArea.innerHTML = quote;
+    quoteArr = quote.split("");
+    let running = true;
+    let counter = 0;
+    let charsPerRow = 60;
+    while (running){
+        let quoteRow = document.createElement('tr');
+        for (counter; counter < charsPerRow; counter++){
+            if (counter == quoteArr.length){
+                running = false;
+            }
+            if (counter < quoteArr.length){
+                let quoteChar = document.createElement('td');
+                quoteChar.class = "notCompleted";
+                quoteChar.id = "char"+counter;
+                quoteChar.innerHTML = quoteArr[counter];
+                quoteRow.appendChild(quoteChar);
+            }
+        }
+        quoteTable.appendChild(quoteRow);
+        charsPerRow += 60;
+    }
     let userInputText = document.createElement('input');
     userInputText.type = "text";
     userInputText.maxLength = 0;
     userInputText.id = "userInputText";
     userInputDiv.appendChild(userInputText);
-    quoteArr = quote.split("");
 }
 
 /**
@@ -61,7 +82,12 @@ function startTypingPractice() {
     gameTextBox.addEventListener('input', (event) => {
         if (quoteArr[currentCharInd] === event.data){   //if the current char is equal to the input
             if (currentCharInd < quoteArr.length-1){    //if we are not on the last char
-                currentCharInd++;                       //update the index
+                let prevChar = currentCharInd;
+                currentCharInd++;
+                let idStr = "char" + prevChar;
+                let charNode = document.getElementById(idStr);//grab the character we are on from the table
+                charNode.style.backgroundColor = '#20b2aa';
+                charNode.style.border = '1px solid lightseagreen';
             }
             else{                                       //we are on the last char so we won the game
                 calculateWpm();                         //calculate user's wpm
@@ -107,4 +133,45 @@ function startGameCountdown() {
             }
         },1000 * i);
     }
+}
+
+/**
+ * this function displays the quote to the screen formatted in a table. This allows for styles to be
+ * more easily applied to individual characters so that users can track their position easier.
+ * The table has around 60 characters per row and creates new rows after spaces from the previous word.
+ */
+function displayQuoteTable () {
+    quoteArr = quote.split("");
+    let currentChar = 0;
+    let maxCharsPerRow = 60;
+    let createNewRow = false;
+    
+    while (currentChar < quoteArr.length){//while we are building the table for the quote
+        let quoteRow = document.createElement('tr');
+        createNewRow = false;//boolean to check whether we it time for a new row
+
+        while (createNewRow == false && currentChar < quoteArr.length){//start building the table
+            if (currentChar > maxCharsPerRow-10 && quoteArr[currentChar-1] === " "){//if we are over 50 characters in the row and on a space
+                createNewRow = true;//its time to create a new row
+            }
+            else{//otherwise we are staying on that same row
+                if (currentChar < quoteArr.length){
+                    let quoteChar = document.createElement('td');//create the data element for the char
+                    quoteChar.class = "notCompleted";//set the class to not completed
+                    quoteChar.id = "char"+currentChar;//set a unique id to the character that is the number character it is in the quote
+                    quoteChar.innerHTML = quoteArr[currentChar];//set the inner html to the char
+                    currentChar++;
+                    quoteRow.appendChild(quoteChar);//append to the row
+                }
+            }
+        } //when we finish a new row
+        quoteTable.appendChild(quoteRow);//append row to the table
+        maxCharsPerRow += 60;//add another 60 to the max chars per row so the next row handles next 60 ish chars
+    }
+
+    let userInputText = document.createElement('input');
+    userInputText.type = "text";
+    userInputText.maxLength = 0;
+    userInputText.id = "userInputText";
+    userInputDiv.appendChild(userInputText);
 }
