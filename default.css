@@ -187,6 +187,23 @@ body {
     padding-right: 75px;
 }
 
+.resume-references {
+    color: lightseagreen;
+}
+
+.res-ref-name {
+    color: lightseagreen;
+    padding-left: 50px;
+}
+
+.res-ref-position {
+    padding-left: 75px;
+}
+
+.res-ref-contact {
+    padding-left: 75px;
+}
+
 /* Styles for js projects page */
 
 
