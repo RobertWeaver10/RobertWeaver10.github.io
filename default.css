@@ -162,8 +162,9 @@ body {
     padding-right: 75px;
 }
 
-.res-exp-disclaimer {
-    font-size: 8pt;
+.res-exp-position {
+    padding-left: 75px;
+    font-size: 10pt;
     color:gray;
 }
 
