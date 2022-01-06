@@ -112,6 +112,7 @@ function blackJack() {
     instructions += "Hold: player ends their turn <br/>";
     instructions += "Split: if the player initially has 2 cards of the same value they can treat each card like it's own hand <br/>";
     gameInstructions.innerHTML = instructions;
+    
     //add the html elements necessary to play the game
     //need a button to get new hand, hit, hold, split, and end game
     let newHand = document.createElement("input");
