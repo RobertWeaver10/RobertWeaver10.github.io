@@ -1,0 +1,14 @@
+
+
+.player-hand {
+    display: flex;
+}
+
+.dealer-hand {
+    display: flex;
+}
+
+img {
+    height: 10%;
+    width: 10%;
+}

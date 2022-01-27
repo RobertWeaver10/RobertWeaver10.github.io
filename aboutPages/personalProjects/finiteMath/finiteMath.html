@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Math 150</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="finiteMath.css">
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <div class="Inputs">
+            <form id="input-form">
+                <input type = "text" class = "formInputs" id = "xInput0" name = "xInput0">
+                <label for = "xInput0">X</label>
+                <input type = "text" class = "formInputs" id = "yInput0" name = "yInput0">
+                <label for = "yInput0">Y</label>
+                <label for = "equals0">=</label>
+                <input type = "text" class = "formInputs" id = "equals0" name = "equals0">
+                <br>
+                <input type = "text" class = "formInputs" id = "xInput1" name = "xInput1">
+                <label for = "xInput1">X</label>
+                <input type = "text" class = "formInputs" id = "yInput1" name = "yInput1">
+                <label for = "yInput1">Y</label>
+                <label for = "equals1">=</label>
+                <input type = "text" class = "formInputs" id = "equals1" name = "equals1"><br>
+            </form>
+            <input type="button" id="add-equation" value="Add Equation">
+            <input type="button" id="input-submit" value="Enter">
+        </div>
+        <div class="Outputs">
+            <table id = "output-table">
+                <tr id = "output-table-headers">
+                    <th id = "xCoefs">X</th> <th id="yCoefs">Y</th> <th id="eqVal">=</th>
+                </tr>
+                <tr id = "equation0">
+                    <td id = "xCoef0">0</td> <td id = "yCoef0">0</td> <td id = "eqVal0">0</td>
+                </tr>
+                <tr id = "equation1">
+                    <td id = "xCoef1">0</td> <td id = "yCoef1">0</td> <td id = "eqVal1">0</td>
+                </tr>
+            </table>
+
+            <input type="button" id="run-gauss-jordan" value="Run Gauss-Jordan Algorithm">
+        </div>
+        <script src="finiteMath.js" async defer></script>
+    </body>
+</html>

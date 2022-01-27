@@ -1,0 +1,26 @@
+.Outputs{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+}
+
+#output-table, th, td{
+    border: 5px solid black;
+    border-collapse: collapse;
+    font-size: 24px;
+    padding: 20px;
+}
+
+#output-table {
+    height: 10vh;
+    width: 20vw;
+    text-align: center;
+}
+
+td {
+    padding: 5px;
+}
+
+.formInputs{
+    width: 30px;
+}
