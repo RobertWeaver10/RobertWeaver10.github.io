@@ -1,6 +1,8 @@
 /* Master Styles using css grid*/
 body {
     margin: 0px;
+    padding-left: 40px;
+    padding-bottom: 40px;
 }
 
 .container {
@@ -203,4 +205,8 @@ body {
 .jsProjectIMG img{
     height: 350px;
     width: 100%;
+}
+
+.sectionTitles {
+    color: lightseagreen;
 }

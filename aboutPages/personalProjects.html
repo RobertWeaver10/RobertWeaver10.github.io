@@ -29,28 +29,46 @@
             </div>
         </div>
 
-        <h1>Personal Projects</h1>
+        <h1>My Projects</h1>
         <div class="personalProjects">
-            <div class="personalProject">
+              <h2 class="sectionTitles">Javascript (HTML & CSS) Projects</h2>
+              <div class="personalProject">
                 <div class="personalProjectText">
-                    <h3 class="personalProjectTitle">Typing Practice</h3>
-                    <p class = "personalProjectDesc">
-                        Similar to typeRacer's sudden death mode this typing practice game gets a random quote with at<br>
-                        with at least 250 characters and has the user type the quote. Upon the first mistake the user is<br>
-                        alerted they made a mistake and the page is reloaded. Upon completion the user is alerted of their <br>
-                        words per minute and then the page is reloaded.
-                    </p>
-                    <div class="personalProjectLinks">
-                        GitHub link:
-                        <a class = "personalProjectFileLink" href="https://github.com/RobertWeaver10/typingPractice">Here</a>
-                        Working version:
-                        <a class = "persoanlProjectWorkLink" href="personalProjects/typingPractice/typingPractice.html">Here</a>
-                    </div>
-                </div>
-
-                <div class="personalProjectText">
-                  <h3 class="personalProjectTitle">Reduced Row Echelon Form Calculator</h3>
+                  <h3 class="personalProjectTitle">Puget Sound Lost & Found</h3>
                   <p class = "personalProjectDesc">
+                      This was my senior capstone project I worked on with four other computer science classmates. We worked <br/>
+                      closely with the University of Puget Sound's security services to modernize their lost and found system. <br/>
+                      Previously, security services kept track of lost items around campus using an excel spreadsheet. For <br/>
+                      community members the only way to tell if security had found any lost items was by physically going to security. <br/>
+                      By making this app, students and faculty can easily check to see if their lost item had been recovered. The features <br/>
+                      of this app include account creation & login with email validation, creating/displaying/deleting posts, visible user profiles.<br/>
+                      The app is written in Javascript, HTML5, and CSS with use of AWS Lightsail, AWS S3, MongoDB, Axios, and Bootstrap.
+                  </p>
+                  <div class="personalProjectLinks">
+                      GitHub link:
+                      <a class = "personalProjectFileLink" href="https://github.com/Vannalla/LostCapstone">Here</a>
+                  </div>
+              </div>
+
+              <div class="personalProjectText">
+                  <h3 class="personalProjectTitle">Typing Practice</h3>
+                  <p class = "personalProjectDesc">
+                      Similar to typeRacer's sudden death mode this typing practice game gets a random quote with at<br>
+                      with at least 250 characters and has the user type the quote. Upon the first mistake the user is<br>
+                      alerted they made a mistake and the page is reloaded. Upon completion the user is alerted of their <br>
+                      words per minute and then the page is reloaded.
+                  </p>
+                  <div class="personalProjectLinks">
+                      GitHub link:
+                      <a class = "personalProjectFileLink" href="https://github.com/RobertWeaver10/typingPractice">Here</a>
+                      Working version:
+                      <a class = "persoanlProjectWorkLink" href="personalProjects/typingPractice/typingPractice.html">Here</a>
+                  </div>
+              </div>
+
+              <div class="personalProjectText">
+                <h3 class="personalProjectTitle">Reduced Row Echelon Form Calculator</h3>
+                <p class = "personalProjectDesc">
                       For the finite math class I am taking (jan-may2022) we have to put systems of linear equations<br>
                       into reduced row echelon form. My profoessor only knows how to do this on a few graphing calculators<br>
                       and the TI-Nspire is not one of them. That is the calculator I have and so I wrote a Gauss-Jordan<br>
@@ -61,6 +79,200 @@
                       <a class = "persoanlProjectWorkLink" href="personalProjects/finiteMath/finiteMath.html">Here</a>
                   </div>
                 </div>
+
+                <div class="personalProject">
+                  <div class="personalProjectText">
+                    <h3 class="personalProjectTitle">Glizzy Royale</h3>
+                    <p class = "personalProjectDesc">
+                      Glizzy Royale is a browser based multiplayer game inspired by internet memes and the popular phone game, <br/>
+                      Brawl Stars. Players connect through the browser and get put into an arena with all other players currently connected<br/>
+                      to the server. In the arena players battle in a free for all style as hot dogs (glizzies) and can fire ketchup blobs to <br/>
+                      deal damage to other players. When a player's health is running low the golden glizzy in the center of the arena dispenses<br/>
+                      bread crumbs to replenish players' buns (health). Written in C# using Unity Game Engine and the WebGL plugin to convert to javascript <br/>
+                      formerly hosted on an apache server.
+                  </p>
+                  <div class="jsProjectLinks">
+                      GitHub link:
+                      <a class = "jsProjectFileLink" href="https://github.com/RobertWeaver10/cs240-term-project">Here</a>
+                      Working version:
+                      <a class = "jsProjectWorkLink" href="http://glizzyroyale.com/">Server no longer hosting</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="personalProject">
+                <div class="personalProjectText">
+                    <h3 class="personalProjectTitle">Simon(e) Memory Game</h3>
+                    <p class = "personalProjectDesc">
+                        A take on the classic memory game Simon, a user enter's the number of rounds they want to play (default is 10 rounds).<br/>
+                        This project was my first time using http requests to retrieve data from a server endpoint and using javascript asynchronously.<br/>
+                        When the player enters the number of rounds they want to play, a call is made to the server to get a random sequence of buttons <br/>
+                        while the game plays the intro jingle. After a few seconds, the game then begins. This project is written in javascript, HTML5, and CSS <br/>
+                        with the Axios library to make http requests.
+                    </p>
+                    <div class="personalProjectLinks">
+                        GitHub link:
+                        <a class = "personalProjectFileLink" href="https://github.com/RobertWeaver10/cs240-hwk-simone">Here</a>
+                    </div>
+                </div>
+              </div>
+
+              <div class="personalProject">
+                <div class="personalProjectText">
+                    <h3 class="personalProjectTitle">Schelling's Model of Self Segregation</h3>
+                    <p class = "personalProjectDesc">
+                        Schelling's model uses a grid with different colors to represent two populations. User's can then set more <br/>
+                        options such as the threshold (% of same neighbors). When the user has set everything how they would like and run<br/>
+                        the program, the individual chunks in the grid move around until they are in an arrangement where everyone is satisfied.<br/>
+                        Schelling's model is used to show that groups will naturally self-segregate themselves to certain degrees. This is written <br/>
+                        in javascript, HTML5, and CSS.
+                    </p>
+                    <div class="personalProjectLinks">
+                        GitHub link:
+                        <a class = "personalProjectFileLink" href="https://github.com/RobertWeaver10/cs240-hwk-schelling">Here</a>
+                    </div>
+                </div>
+              </div>
+
+              <div class="personalProject">
+                <div class="personalProjectText">
+                    <h3 class="personalProjectTitle">Scoreboard App</h3>
+                    <p class = "personalProjectDesc">
+                        This program is a simple scoreboard app for a baseball/softball game. Users can specify what inning the game is in <br/>
+                        and update the score and number of outs. This app is written in javascript, HTML5, and CSS.
+                    </p>
+                    <div class="personalProjectLinks">
+                        GitHub link:
+                        <a class = "personalProjectFileLink" href="https://github.com/RobertWeaver10/cs240-hwk-scoreboard">Here</a>
+                    </div>
+                </div>
+              </div>
+
+              <div class="personalProject">
+                <div class="personalProjectText">
+                    <h3 class="personalProjectTitle">Word Guessing Game</h3>
+                    <p class = "personalProjectDesc">
+                        This game is similar to the classic game, Hangman. Played in the terminal, the computer picks a word from an included <br/>
+                        dictionary and displays the length using "_". The player then guesses letters in attempt to figure out the word. This was my<br/>
+                        first project I ever wrote using javascript, HTML5, and CSS.
+                    </p>
+                    <div class="personalProjectLinks">
+                        GitHub link:
+                        <a class = "personalProjectFileLink" href="https://github.com/RobertWeaver10/cs240-hwk-wordplay">Here</a>
+                    </div>
+                </div>
+              </div>
+
+              <h2 class="sectionTitles">Java Projects</h2>
+                <div class="javaProject">
+                  <div class="javaProjectText">
+                      <h3 class="javaProjectTitle">Movie Analyzer</h3>
+                      <p class = "javaProjectDesc">
+                          The movie analyzer program reads raw movie review data a file and cleanses the data to then be used to construct<br/>
+                          graphs. The program runs in the command line and prompts users with two options for how to construct the graph,<br/>
+                          after the graph is built (roughly 4 seconds) the user has options to see either statistics about the graph or<br/>
+                          individual movie nodes. In completing this assignment me and my partner had to use a graph class we had written<br/>
+                          previously and required us to implement Floyd-Warshall's algorithm and Djikstra's algorithm for some features.<br/>
+                          Written completely in Java.
+                      </p>
+                  </div>
+                  <div class="javaProjectLinks">
+                      GitHub link:
+                      <a class = "javaProjectLink" href="">Coming Soon</a>
+                  </div>
+              </div>
+
+              <div class="javaProject">
+                  <div class="javaProjectText">
+                      <h3 class="javaProjectTitle">Directed Graph</h3>
+                      <p class = "javaProjectDesc">
+                          This is a directed graph in java implementing java's graph interface. The graph is stored using a hashmap of lists<br/>
+                          where each key is a node and each value is an arrayList of the key's neighboring nodes.
+                      </p>
+                  </div>
+                  <div class="javaProjectLinks">
+                      GitHub link:
+                      <a class = "javaProjectLink" href="">Coming Soon</a>
+                  </div>
+              </div>
+
+              <div class="javaProject">
+                  <div class="javaProjectText">
+                      <h3 class="javaProjectTitle">Priority Queue</h3>
+                      <p class = "javaProjectDesc">
+                          The priority queue works similar to a queue but now items being stored also have a priority assigned to them.<br/>
+                          The highest priority items go to the top of the queue. Each item has either no children (leaf nodes), or they<br/>
+                          have either a left, or both a left and right child. Because of the way the priority queue is built, nodes cannot<br/>
+                          have just a right child.
+                      </p>
+                  </div>
+                  <div class="javaProjectLinks">
+                      GitHub link:
+                      <a class = "javaProjectLink" href="">Coming Soon</a>
+                  </div>
+              </div>
+
+              <div class="javaProject">
+                  <div class="javaProjectText">
+                      <h3 class="javaProjectTitle">Evil Hangman</h3>
+                      <p class = "javaProjectDesc">
+                          This game is similar to the classic game hangman however there is one catch, the computer changes the word<br/>
+                          with each letter the user guesses. That's why it is the "evil" version of hangman. The computer checks a dictionary<br/>
+                          and finds a new word after each guess so that the new word fits in line with the length of the original word and <br/>
+                          with the letters the user has already guessed.
+                      </p>
+                  </div>
+                  <div class="javaProjectLinks">
+                      GitHub link:
+                      <a class = "javaProjectLink" href="">Coming Soon</a>
+                  </div>
+              </div>
+
+              <div class="javaProject">
+                  <div class="javaProjectText">
+                      <h3 class="javaProjectTitle">Tic Tac Toe</h3>
+                      <p class = "javaProjectDesc">
+                          This project is a version of the classic game Tic Tac Toe. For this project I also programmed some bots<br/>
+                          so that the player can play against the computer and different styles of play if there are no peers for them<br/>
+                          to play against.
+                      </p>
+                  </div>
+                  <div class="javaProjectLinks">
+                      GitHub link:
+                      <a class = "javaProjectLink" href="">Coming Soon</a>
+                  </div>
+              </div>
+              
+              <h2 class="sectionTitles">Functional Programming Projects (Haskell and Prolog)</h2>
+              <div class="functionalProgProject">
+                <div class="functionalProgText">
+                    <h3 class="functionalProgTitle">Graph Coloring In Haskell</h3>
+                    <p class = "functionalProgDesc">
+                        This project tackles the classic graph coloring problem using the functional programming language, Haskell.<br/> 
+                        The graph coloring problem is where there is a graph and we want to assign colors to all the nodes. <br/>
+                        Neighboring nodes cannot be assigned the same color and we want to try using as few colors as possible to <br/>
+                        give a satisfactory color assignment to each node.
+                    </p>
+                </div>
+                <div class="functionalProgLinks">
+                    Project link:
+                    <a class = "functionalProgLink" href="https://replit.com/@RobertWeaver/assignment-5#main.hs">Here</a>
+                </div>
+              </div>
+      
+              <div class="functionalProgProject">
+                  <div class="functionalProgText">
+                      <h3 class="functionalProgTitle">Graph Coloring In Prolog</h3>
+                      <p class = "functionalProgDesc">
+                          This project tackles the same graph coloring problem however this implementation is written in the language,<br/>
+                          Prolog.
+                      </p>
+                  </div>
+                  <div class="functionalProgLinks">
+                      Project link:
+                      <a class = "functionalProgLink" href="https://swish.swi-prolog.org/p/assignment%209%20p2.pl">Here</a>
+                  </div>
+              </div>
 
             </div>
         </div>

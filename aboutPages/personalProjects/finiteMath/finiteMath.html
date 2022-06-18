@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="finiteMath.css">
     </head>
     <body>
-        <h1>Hello World</h1>
+        <h1>Guass-Jordan Algorithm</h1>
         <div class="Inputs">
             <form id="input-form">
                 <input type = "text" class = "formInputs" id = "xInput0" name = "xInput0">
@@ -43,6 +43,47 @@
             </table>
 
             <input type="button" id="run-gauss-jordan" value="Run Gauss-Jordan Algorithm">
+        </div>
+
+        <div class="simplex-algorithm-calculator">
+            <h1>Simplex Algorithm Calculator</h1>
+            <div class="simplex-constraints">
+                <h2>constraints:</h2>
+                <form id="simplex-algorithm-constraint-input-form">
+                    <label for = "x-coeff">X coefficient</label>
+                    <input type="text" class="simplex-inputs" id="x-coeff" name="x-coeff">
+                    <br>
+                    <label for = "y-coeff">Y coefficient</label>
+                    <input type="text" class="simplex-inputs" id="y-coeff" name="y-coeff">
+                    <br>                        
+                    <label for = "s1">Slack var 1</label>
+                    <input type="text" class="simplex-inputs" id="s1" name="s1">
+                    <br>
+                    <label for = "Const">Const</label>
+                    <input type="text" class="simplex-inputs" id="Const" name="Const">
+                </form>
+                <input type="button" id="add-simplex-var" value="Add a variable">
+                <input type="button" id="add-another-slack-var" value="Add a slack variable">
+                <input type="button" id="submit-simplex-constraint" value="submit constraint">
+            </div>
+            <div class="simplex-objective">
+                <h2>objective equation:</h2>
+                <form id="simplex-algorithm-objective-eq-form">
+                    <label for = "X-obj-coeff">X coefficient</label>
+                    <input type="text" class="simplex-inputs" id="X-obj-coeff" name="X-obj-coeff">
+                    <br>
+                    <label for = "Y-obj-coeff">Y coefficient</label>
+                    <input type="text" class="simplex-inputs" id="Y-obj-coeff" name="Y-obj-coeff">
+                    <br>
+                    <label for = "goal-obj-coeff">goal coefficient</label>
+                    <input type="text" class="simplex-inputs" id="goal-obj-coeff" name="goal-obj-coeff">
+                    <br>
+                    <label for = "obj-const">Objective constant</label>
+                    <input type="text" class="simplex-inputs" id="obj-const" name="obj-const">
+                </form>
+                <input type="button" id="add-var-button" value="Add another variable">
+                <input type="button" id="submit-simplex-obj" value="submit objective eq">
+            </div>
         </div>
         <script src="finiteMath.js" async defer></script>
     </body>
